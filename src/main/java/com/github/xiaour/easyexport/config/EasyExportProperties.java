@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * @Date 2022/3/11 下午2:54
  */
 @Configuration
-@ConfigurationProperties(prefix = "bsf.com.github.xiaour.easyexport")
+@ConfigurationProperties(prefix = "com.github.xiaour.easyexport")
 public class EasyExportProperties {
 
 
@@ -18,37 +18,37 @@ public class EasyExportProperties {
     /**
      * 文件存储位置
      */
-    @Value("${bsf.com.github.xiaour.easyexport.file.path:}")
+    @Value("${com.github.xiaour.easyexport.file.path:}")
     private String filePath;
 
     /**
      * 上传完成后是否删除
      */
-    @Value("${bsf.com.github.xiaour.easyexport.file.delete:false}")
+    @Value("${com.github.xiaour.easyexport.file.delete:false}")
     private Boolean isDelete;
 
     /**
      * 页码字段
      */
-    @Value("${bsf.com.github.xiaour.easyexport.field.page.number:pageNum}")
+    @Value("${com.github.xiaour.easyexport.field.page.number:pageNum}")
     private String pageNumberField;
 
     /**
      * 每页记录数字段
      */
-    @Value("${bsf.com.github.xiaour.easyexport.field.page.size:pageSize}")
+    @Value("${com.github.xiaour.easyexport.field.page.size:pageSize}")
     private String pageSizeField;
 
     /**
      * 每页查询记录数：默认每次查询1万条
      */
-    @Value("${bsf.com.github.xiaour.easyexport.fetch.page.size:10000}")
+    @Value("${com.github.xiaour.easyexport.fetch.page.size:10000}")
     private Integer pageSize;
 
     /**
      * 文件每页写入记录数，超过限制写入下一个Sheet：默认每个sheet页写入150000
      */
-    @Value("${bsf.com.github.xiaour.easyexport.file.sheet.size:150000}")
+    @Value("${com.github.xiaour.easyexport.file.sheet.size:150000}")
     private Integer sheetSize;
 
     public Integer getSheetSize() {

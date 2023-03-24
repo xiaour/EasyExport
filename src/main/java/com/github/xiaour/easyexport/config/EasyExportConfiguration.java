@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * @Author zhangtao
  * @Description 导出组件配置类.
@@ -31,7 +34,7 @@ public class EasyExportConfiguration implements InitializingBean {
     public AppContextFactory initAppContext(){
         AppContextFactory context = new AppContextFactory();
         appContextFactory = context;
-        LogUtils.info(EasyExportConfiguration.class, ExportConstant.PROJECT,"AppContextFactory initialized.");
+        log.info("EasyExport AppContextFactory initialized.");
         return  appContextFactory;
     }
 
@@ -39,14 +42,15 @@ public class EasyExportConfiguration implements InitializingBean {
     @Bean
     @DependsOn("initAppContext")
     public EasyExportProvider initEasyExportBean(EasyExportProperties easyExportProperties){
-        EasyExportProvider executor = new EasyExportProvider(appContextFactory,easyExportProperties);
-        LogUtils.info(EasyExportConfiguration.class,ExportConstant.PROJECT,"EasyExportProvider initialized.");
+        Lock lock = new ReentrantLock();
+        EasyExportProvider executor = new EasyExportProvider(appContextFactory,easyExportProperties,lock);
+        log.info("EasyExportProvider initialized.");
         return executor;
     }
 
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        LogUtils.info(EasyExportConfiguration.class,ExportConstant.PROJECT,"started.");
+        log.info("EasyExport started.");
     }
 }
