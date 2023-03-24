@@ -15,8 +15,8 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 - ✅  分页参数自定义，允许使用非标准的分页信息，可以根据数据库的吞吐量定义每批次最大取出数据量（不推荐）。
 - ❌  @EasyExportGroup 多个Excel打包导出（实现中）
 
-##接入使用
-###1. 接入：依赖引用
+## 接入使用
+### 1. 接入：依赖引用
 ```xml
     <dependency>
         <artifactId>csx-bsf-easyexport</artifactId>
@@ -26,7 +26,7 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 ```
 
 
-###2. 接入：配置文件
+### 2. 接入：配置文件
 ```properties
 #启用easyexport
 bsf.easyexport.enabled=true
@@ -44,9 +44,7 @@ bsf.easyexport.field.page.number=pageIndex
 bsf.easyexport.field.page.size=pageSize
 ```
 
-###3. 接入：入口代码
-
-
+### 3. 接入：入口代码
 
 ```java
 /**
@@ -91,7 +89,7 @@ private ExportContext transferModel(ExportContext exportContext){
 }
 ```
 
-###4. 接入：监听执行进度（非必须）
+### 4. 接入：监听执行进度（非必须）
 ```java
 @Component
 public class ExportEventListener extends AbsBaseEventListener<ExportEvent> {
@@ -114,7 +112,7 @@ public class ExportEventListener extends AbsBaseEventListener<ExportEvent> {
 ```
 
 
-###5. 使用：开发者使用
+### 5. 使用：开发者使用
 ```java
 @Service
 @EasyExport
