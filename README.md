@@ -148,7 +148,7 @@ public class Cat {
 ```
 
 
-###6. 使用：获取所有导出映射文件
+### 6. 使用：获取所有导出映射文件
 ```java
 
 List<ExportMapping> list = easyExportProvider.getMappingClass();
