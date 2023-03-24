@@ -29,19 +29,19 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 ### 2. 接入：配置文件
 ```properties
 #启用easyexport
-bsf.easyexport.enabled=true
+easyexport.enabled=true
 #以下为可选项
 #每次获取的最大记录数
-bsf.easyexport.fetch.page.size=5000
+easyexport.fetch.page.size=5000
 #是否删除生成的原始文件，一般生产环境为true，方便调试使用
-bsf.easyexport.file.delete=true
+easyexport.file.delete=true
 #文件每页写入记录数，超过限制写入下一个Sheet，默认单sheet页写入150000
-bsf.easyexport.file.sheet.size=15000
+easyexport.file.sheet.size=15000
 #按规范，所有项目都用当使用com.yh.csx.business.api.entity.Page 返回数据，但尚未规范的请设置页码和记录数字段
 #页码字段
-bsf.easyexport.field.page.number=pageIndex
+easyexport.field.page.number=pageIndex
 #每页记录数字段
-bsf.easyexport.field.page.size=pageSize
+easyexport.field.page.size=pageSize
 ```
 
 ### 3. 接入：入口代码
