@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "name": "bsf.easyexport",
+      "type": "com.github.xiaour.easyexport.config.EasyExportProperties",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "bsf.easyexport.enabled",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.file.path",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.file.delete",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.field.page.number",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.field.page.size",
+      "type": "java.lang.String",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.fetch.page.size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    },
+    {
+      "name": "bsf.easyexport.file.sheet.size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+    }
+  ],
+  "hints": []
+}
