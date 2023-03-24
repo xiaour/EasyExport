@@ -37,7 +37,6 @@ easyexport.fetch.page.size=5000
 easyexport.file.delete=true
 #文件每页写入记录数，超过限制写入下一个Sheet，默认单sheet页写入150000
 easyexport.file.sheet.size=15000
-#按规范，所有项目都用当使用com.yh.csx.business.api.entity.Page 返回数据，但尚未规范的请设置页码和记录数字段
 #页码字段
 easyexport.field.page.number=pageIndex
 #每页记录数字段
