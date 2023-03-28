@@ -18,11 +18,11 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 ## 接入使用
 ### 1. 接入：依赖引用
 ```xml
-    <dependency>
-        <artifactId>easyexport</artifactId>
-        <groupId>com.github.xiaour</groupId>
-        <version>1.0.0-SNAPSHOT</version>
-    </dependency>  
+<dependency>
+  <groupId>io.github.xiaour</groupId>
+  <artifactId>easy-export</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+</dependency>
 ```
 
 
