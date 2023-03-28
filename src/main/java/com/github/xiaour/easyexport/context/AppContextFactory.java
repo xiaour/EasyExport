@@ -1,12 +1,8 @@
 package com.github.xiaour.easyexport.context;
 
-
-import com.github.xiaour.core.util.LogUtils;
 import com.github.xiaour.easyexport.annotation.EasyExport;
 import com.github.xiaour.easyexport.annotation.EasyExportGroup;
 import com.github.xiaour.easyexport.annotation.EasyExportSingle;
-import com.github.xiaour.easyexport.config.EasyExportConfiguration;
-import com.github.xiaour.easyexport.config.EasyExportProperties;
 import com.github.xiaour.easyexport.constants.ExportConstant;
 import com.github.xiaour.easyexport.event.AbsBaseEvent;
 import com.github.xiaour.easyexport.exception.EasyExportException;
@@ -101,14 +97,14 @@ public class AppContextFactory implements ApplicationContextAware {
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) {
         this.getExportClassByAnnotation(applicationContext);
-        LogUtils.info(EasyExportConfiguration.class, ExportConstant.PROJECT,"AppContext initialized.");
+        log.info("AppContext initialized.");
         this.applicationContext = applicationContext;
     }
 
     private void getExportClassByAnnotation(ApplicationContext context) {
         Map<String, Object> exportClazzMap = context.getBeansWithAnnotation(EasyExport.class);
         if(exportClazzMap == null || exportClazzMap.isEmpty()){
-            LogUtils.warn(AppContextFactory.class,ExportConstant.PROJECT,"not found mapping files.");
+           log.warn("not found mapping files.");
             return;
         }
         exportClazzMap.entrySet().forEach(exportClazz ->{
@@ -119,7 +115,7 @@ public class AppContextFactory implements ApplicationContextAware {
             }
         });
 
-        LogUtils.info(AppContextFactory.class,ExportConstant.PROJECT,"scan to "+EasyExportUtils.getExportClazzContext().size()+"mapping files.");
+        log.info("scan to "+EasyExportUtils.getExportClazzContext().size()+"mapping files.");
 
     }
 
