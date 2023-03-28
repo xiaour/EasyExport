@@ -1,9 +1,9 @@
 package com.github.xiaour.easyexport.constants;
 
 /**
- * @Author zhangtao
- * @Description 导出的常量以及相关标识符
- * @Date 2021/7/8 16:39
+ * @author zhangtao
+ *  导出的常量以及相关标识符
+ * create by 2021/7/8 16:39
  */
 public class ExportConstant {
 

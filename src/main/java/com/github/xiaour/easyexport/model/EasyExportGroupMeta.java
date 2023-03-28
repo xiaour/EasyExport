@@ -6,9 +6,9 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * @Author zhangtao
- * @Description The author is lazy and doesn't write anything.
- * @Date 2022/6/21 上午10:00
+ * @author zhangtao
+ *  The author is lazy and doesn't write anything.
+ * create by 2022/6/21 上午10:00
  */
 @Data
 public class EasyExportGroupMeta {

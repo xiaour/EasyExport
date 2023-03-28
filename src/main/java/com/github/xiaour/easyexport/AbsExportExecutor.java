@@ -29,9 +29,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 
 /**
- * @Author zhangtao
- * @Description 统一导出方案
- * @Date 2022/3/11 下午1:58
+ * @author zhangtao
+ *  统一导出方案
+ * create by 2022/3/11 下午1:58
  */
 @Slf4j
 public abstract class AbsExportExecutor {
@@ -91,24 +91,24 @@ public abstract class AbsExportExecutor {
 
     /**
      * 获取总条数，用于计算进度条
-     * @param exportContext
-     * @return
+     * @param exportContext 导出的上下文
+     * @return 总记录数
      */
-    public abstract Long getTotal(ExportContext exportContext) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException;
+    public abstract Long getTotal(ExportContext exportContext) ;
 
     /**
      * 获取下一页,分页获取并返回
-     * @param exportContext
-     * @param pageNum
-     * @return
+     * @param exportContext 导出的上下文
+     * @param pageNum 页码
+     * @return list
      */
-    public abstract List<?> getNextPage(ExportContext exportContext,int pageNum) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException;
+    public abstract List<?> getNextPage(ExportContext exportContext,int pageNum);
 
 
     /**
      * 普通导出
-     * @param easyExportBuilder
-     * @return
+     * @param easyExportBuilder easyExportBuilder
+     * @return AbsExportExecutor
      */
     @SneakyThrows
     public AbsExportExecutor doExport(EasyExportBuilder easyExportBuilder){
@@ -130,8 +130,8 @@ public abstract class AbsExportExecutor {
 
     /**
      * 上传文件
-     * @param uploadCallBack
-     * @return
+     * @param uploadCallBack 上传回调
+     * @return AbsExportExecutor
      */
     public AbsExportExecutor upload(UploadCallback uploadCallBack){
         try {
@@ -253,7 +253,7 @@ public abstract class AbsExportExecutor {
 
     /**
      * 删除生成的本地文件，返回远程文件链接
-     * @return
+     * @return 远程文件链接
      */
     public String finish(){
         try {

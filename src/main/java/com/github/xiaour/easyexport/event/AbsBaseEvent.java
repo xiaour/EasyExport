@@ -8,10 +8,10 @@ import java.util.Map;
 /**
  * AbsBaseEvent
  *
- * @Version 1.1.0
- * @Author zhang.tao
- * @Date 2020/12/10 11:32
- * @Description  事件基础类,禁止直接使用
+ * @version 1.1.0
+ * @author zhang.tao
+ * create by 2020/12/10 11:32
+ *   事件基础类,禁止直接使用
  */
 public abstract class AbsBaseEvent extends ApplicationEvent implements Serializable {
 
@@ -33,7 +33,7 @@ public abstract class AbsBaseEvent extends ApplicationEvent implements Serializa
 
     /**
      * 预留：暂时不启用
-     * @return
+     * @return boolean
      */
     public boolean isSync() {
         return this.sync;

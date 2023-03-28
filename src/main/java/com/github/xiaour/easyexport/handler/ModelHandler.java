@@ -1,9 +1,9 @@
 package com.github.xiaour.easyexport.handler;
 
 /**
- * @Author zhangtao
- * @Description 初始化Excel执行
- * @Date 2022/7/29 16:41
+ * @author zhangtao
+ *  初始化Excel执行
+ * create by 2022/7/29 16:41
  */
 public interface ModelHandler<T> {
 

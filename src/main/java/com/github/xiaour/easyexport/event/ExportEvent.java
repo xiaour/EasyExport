@@ -1,9 +1,9 @@
 package com.github.xiaour.easyexport.event;
 
 /**
- * @Author zhangtao
- * @Description 导出的事件
- * @Date 2022/7/22 16:36
+ * @author zhangtao
+ *  导出的事件
+ * create by 2022/7/22 16:36
  */
 public class ExportEvent extends AbsBaseEvent {
 

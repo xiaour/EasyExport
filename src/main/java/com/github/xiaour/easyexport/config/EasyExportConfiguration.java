@@ -16,9 +16,9 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * @Author zhangtao
- * @Description 导出组件配置类.
- * @Date 2022/1/21 下午5:06
+ * @author zhangtao
+ *  导出组件配置类.
+ * create by 2022/1/21 下午5:06
  */
 
 @Slf4j

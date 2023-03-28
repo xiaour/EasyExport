@@ -4,9 +4,9 @@ package com.github.xiaour.easyexport.builder;
 import org.springframework.util.Assert;
 
 /**
- * @Author zhangtao
- * @Description 导出上下文
- * @Date 2022/7/22 15:13
+ * @author zhangtao
+ *  导出上下文
+ * create by 2022/7/22 15:13
  */
 public class ExportContext {
 
@@ -64,12 +64,12 @@ public class ExportContext {
 
 
     /**
-     * 默认是com.yh.csx.business.api.entity.Page.getData(),如果不是请设置此方法
+     * 获取分页List方法名
      */
     private String dataListMethod;
 
     /**
-     * 默认是com.yh.csx.business.api.entity.Page.getTotal(),如果不是请设置此方法
+     * 获取分页总记录数方法名
      */
     private String dataTotalMethod;
 
@@ -112,10 +112,10 @@ public class ExportContext {
     }
 
     /**
-     * 如果没有使用BSF中的com.yh.csx.business.api.entity.Page请设置默认方法
+     * 分页相关的方法
      * @param dataTotalMethod  获取总记录数的方法，必须是无参的get方法
      * @param dataListMethod   获取数据列表的方法，必须是无参的get方法
-     * @return
+     * @return ExportContext
      */
     public ExportContext pageMethod(String dataTotalMethod ,String dataListMethod) {
         this.dataTotalMethod = dataTotalMethod;
@@ -147,9 +147,9 @@ public class ExportContext {
 
     /**
      * 首选构造方法
-     * @param taskId
-     * @param taskName
-     * @param exportParam
+     * @param taskId 任务ID
+     * @param taskName 任务名称
+     * @param exportParam 生成EXCEL的其他参数
      */
     public ExportContext(String taskId, String taskName, ExportParam exportParam) {
         this.taskId = taskId;

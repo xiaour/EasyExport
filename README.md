@@ -154,7 +154,7 @@ ExportParam
 ExportParam是对前端提供的入口参数模板，在开发者@EasyExportSingle后，应用启动会将相关映射文件扫描到本地缓存中，通过接口 easyExportProvider.getMappingClass()可以获取到对应的映射文件，classMapping属性需要前端指定需要执行导出的映射文件；params属性是前端需要将页面查询的所有参数进行封装后全部放入params中；pageId属性是用来标识页面来源的，这个可以根据是否需要用到选择是否使用即可。
 
 EasyExportBuilder
-1. pageMethod(var1,var2)是用来指定分页信息取值的方法，按照技术规范，我们指定的返回com.yh.csx.business.api.entity.Page<T>则无需调用该方法自定义，否则需要用户传入获取集合和总记录数的方法。
+1. pageMethod(var1,var2)是用来指定分页信息取值的方法，需要用户传入获取集合和总记录数的方法。
 2. currentUser() 是为了保证各系统不同户体系能够正常使用，需要开发者将对应的用户信息传入。
 3. registerConverter() 用户则可以通过自定义转换器，可以格式化Excel数据等操作。
 4. context()用于构建任务信息的模板，我们需要在本地任务或离线任务设定上下文信息等要素。

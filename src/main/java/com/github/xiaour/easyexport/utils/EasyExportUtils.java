@@ -8,9 +8,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Author zhangtao
- * @Description 导出类的一些基础工具方法，全局缓存数据
- * @Date 2022/7/14 17:45
+ * @author zhangtao
+ *  导出类的一些基础工具方法，全局缓存数据
+ * create by 2022/7/14 17:45
  */
 public class EasyExportUtils {
 
@@ -34,7 +34,7 @@ public class EasyExportUtils {
 
     /**
      * 导出上下文
-     * @return
+     * @return map
      */
     public static final Map<String, String> getExportClazzContext() {
         return exportClazzContext;
@@ -52,8 +52,8 @@ public class EasyExportUtils {
 
     /**
      * 拆分传入的映射文件相关的参数
-     * @param classMappingStr
-     * @return
+     * @param classMappingStr 对标文件
+     * @return [exportClass,exportmethod]
      */
     public static String[] getClassMethod(String classMappingStr){
         //因为Base64前面添加了@用以识别所以这里需要替换掉。

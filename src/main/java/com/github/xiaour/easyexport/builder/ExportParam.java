@@ -5,9 +5,9 @@ import org.springframework.util.Assert;
 import java.util.HashMap;
 
 /**
- * @Author zhangtao
- * @Description 统一的导出参数模板类，需要在调度创建的接口初始化，clazzMapping非常重要，后端需要提供一个接口AppContext.getExportClazzContext()获取对标文件
- * @Date 2022/3/29 下午6:43
+ * @author zhangtao
+ *  统一的导出参数模板类，需要在调度创建的接口初始化，clazzMapping非常重要，后端需要提供一个接口AppContext.getExportClazzContext()获取对标文件
+ * create by 2022/3/29 下午6:43
  */
 public class ExportParam {
 

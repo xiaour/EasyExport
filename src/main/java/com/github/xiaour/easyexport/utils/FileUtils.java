@@ -19,11 +19,6 @@ public class FileUtils {
         }
     }
 
-    /**
-     * 获取文件大小
-     * @param filename
-     * @return
-     */
     public static long getFileSize(String filename) {
         File file = new File(filename);
         if (!file.exists() || !file.isFile()) {

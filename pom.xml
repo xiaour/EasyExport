@@ -36,6 +36,7 @@
         <springboot.version>2.1.2.RELEASE</springboot.version>
         <spring.version>5.1.4.RELEASE</spring.version>
         <fastjson.version>1.2.73</fastjson.version>
+        <output.path>D:/workspace/EasyExport/target</output.path>
     </properties>
 
     <licenses>
@@ -51,13 +52,11 @@
             <name>xiaour</name>
             <url>https://xiaour.github.io</url>
             <roles>
-                <role>Project Manager</role>
                 <role>Architect</role>
             </roles>
             <timezone>+8</timezone>
         </developer>
     </developers>
-
 
     <scm>
         <tag>master</tag>
@@ -117,8 +116,8 @@
                         </executions>
                         <configuration>
                             <encoding>${project.build.sourceEncoding}</encoding>
-                            <outputDirectory>${basedir}</outputDirectory>
-                            <reportOutputDirectory>${basedir}</reportOutputDirectory>
+                            <outputDirectory>${output.path}</outputDirectory>
+                            <reportOutputDirectory>${output.path}</reportOutputDirectory>
                         </configuration>
                     </plugin>
 

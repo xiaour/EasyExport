@@ -5,9 +5,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Author zhangtao
- * @Description 导出配置
- * @Date 2022/3/11 下午2:54
+ * @author zhangtao
+ *  导出配置
+ * create by 2022/3/11 下午2:54
  */
 @Configuration
 @ConfigurationProperties(prefix = "com.github.xiaour.easyexport")

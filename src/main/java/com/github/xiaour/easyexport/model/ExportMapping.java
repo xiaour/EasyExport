@@ -3,9 +3,9 @@ package com.github.xiaour.easyexport.model;
 import lombok.Data;
 
 /**
- * @Author zhangtao
- * @Description 导出的映射文件键值对结构
- * @Date 2022/7/25 17:37
+ * @author zhangtao
+ *  导出的映射文件键值对结构
+ * create by 2022/7/25 17:37
  */
 @Data
 public class ExportMapping {

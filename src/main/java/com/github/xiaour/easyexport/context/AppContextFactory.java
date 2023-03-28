@@ -23,10 +23,10 @@ import java.util.Map;
 /**
  * AppContext
  *
- * @Version 1.1.0
- * @Author zhang.tao
- * @Date 2020/12/10 11:55
- * @Description 应用的自定义全局上下文包括一些关键的全局方法
+ * @version 1.1.0
+ * @author zhang.tao
+ * create by 2020/12/10 11:55
+ *  应用的自定义全局上下文包括一些关键的全局方法
  */
 @Slf4j
 @Component
@@ -42,7 +42,7 @@ public class AppContextFactory implements ApplicationContextAware {
 
     /**
      * 发送异步事件
-     * @param event
+     * @param event event
      */
     @Async
     public  void publish(AbsBaseEvent event) {
@@ -121,8 +121,7 @@ public class AppContextFactory implements ApplicationContextAware {
 
     /**
      * 获取导出注解的相关方法
-     * @param clz
-     * @throws Exception
+     * @param clz annotation class
      */
     public void getExportAnnotationMethod(Class clz) {
         //因为是AOP代理的类，所以不能直接实例化获取注解

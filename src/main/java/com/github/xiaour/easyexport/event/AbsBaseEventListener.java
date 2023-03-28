@@ -12,10 +12,10 @@ import java.util.Map;
 /**
  * AbsCommonEventListener
  *
- * @Version 1.1.0
- * @Author zhang.tao
- * @Date 2020/12/10 13:46
- * @Description
+ * @version 1.1.0
+ * @author zhang.tao
+ * create by 2020/12/10 13:46
+ *
  */
 @Slf4j
 @Component

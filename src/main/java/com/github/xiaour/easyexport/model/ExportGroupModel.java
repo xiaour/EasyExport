@@ -3,9 +3,9 @@ package com.github.xiaour.easyexport.model;
 import lombok.Data;
 
 /**
- * @Author zhangtao
- * @Description 导出方法模板
- * @Date 2022/6/27 下午4:41
+ * @author zhangtao
+ *  导出方法模板
+ * create by 2022/6/27 下午4:41
  */
 @Data
 public class ExportGroupModel {

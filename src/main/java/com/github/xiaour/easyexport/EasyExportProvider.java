@@ -27,9 +27,9 @@ import java.util.Map;
 import java.util.concurrent.locks.Lock;
 
 /**
- * @Author zhangtao
- * @Description 公共导出类
- * @Date 2022/3/11 下午3:43
+ * @author zhangtao
+ *  公共导出类
+ * create by 2022/3/11 下午3:43
  */
 @Slf4j
 public class EasyExportProvider extends AbsExportExecutor {
@@ -39,8 +39,9 @@ public class EasyExportProvider extends AbsExportExecutor {
     }
 
 
+    @SneakyThrows
     @Override
-    public Long getTotal(ExportContext exportContext) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public Long getTotal(ExportContext exportContext) {
         Object obj = getDataList(exportContext,1);
         Assert.notNull(obj,"未获取到总数，对象为空");
         Method m = obj.getClass().getMethod(StringUtils.isEmpty(exportContext.getDataTotalMethod())? ExportConstant.METHOD_TOTAL:exportContext.getDataTotalMethod());
@@ -51,8 +52,9 @@ public class EasyExportProvider extends AbsExportExecutor {
         return count;
     }
 
+    @SneakyThrows
     @Override
-    public List<?> getNextPage(ExportContext exportContext, int pageNum) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
+    public List<?> getNextPage(ExportContext exportContext, int pageNum) {
         Object obj = getDataList(exportContext,pageNum);
         Assert.notNull(obj,"未获取到记录，对象为空");
         Method m = obj.getClass().getMethod(StringUtils.isEmpty(exportContext.getDataListMethod())? ExportConstant.METHOD_LIST:exportContext.getDataListMethod());
@@ -62,7 +64,7 @@ public class EasyExportProvider extends AbsExportExecutor {
 
     /**
      * 获取所有的导出类映射文件
-     * @return
+     * @return List
      */
     public List<ExportMapping> getMappingClass(){
         List<ExportMapping> list = new ArrayList<>();

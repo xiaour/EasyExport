@@ -1,9 +1,9 @@
 package com.github.xiaour.easyexport.exception;
 
 /**
- * @Author zhangtao
- * @Description this is exception
- * @Date 2021/9/13 下午1:49
+ * @author zhangtao
+ *  this is exception
+ * create by 2021/9/13 下午1:49
  */
 public class EasyExportException extends RuntimeException{
 

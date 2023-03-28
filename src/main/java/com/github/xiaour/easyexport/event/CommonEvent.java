@@ -2,10 +2,10 @@ package com.github.xiaour.easyexport.event;
 
 /**
  * CommonEvent
- * @Version 1.1.0
- * @Author zhang.tao
- * @Date 2020/12/10 13:45
- * @Description
+ * @version 1.1.0
+ * @author zhang.tao
+ * create by 2020/12/10 13:45
+ *
  */
 public class CommonEvent  extends AbsBaseEvent {
 
@@ -30,7 +30,7 @@ public class CommonEvent  extends AbsBaseEvent {
 
     /**
      * 是否确认要发送事件
-     * @return
+     * @return CommonEvent
      */
     public CommonEvent ignore() {
         this.ignore = true;

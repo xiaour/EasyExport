@@ -10,9 +10,9 @@ import org.springframework.util.Assert;
 import java.lang.reflect.Method;
 
 /**
- * @Author zhangtao
- * @Description The author is lazy and doesn't write anything.
- * @Date 2022/3/29 下午6:05
+ * @author zhangtao
+ *  The author is lazy and doesn't write anything.
+ * create by 2022/3/29 下午6:05
  */
 @Slf4j
 public class EasyExportBuilder<T> {
@@ -51,8 +51,8 @@ public class EasyExportBuilder<T> {
 
     /**
      * 注册转换器，EasyExcel原生转换器
-     * @param converter
-     * @return
+     * @param converter 转换器
+     * @return EasyExportBuilder
      */
     public EasyExportBuilder<T> registerConverter(final ExportConverter<T> converter) {
         this.converter = converter;
@@ -99,8 +99,8 @@ public class EasyExportBuilder<T> {
 
     /**
      * 处理Model，改变字段顺序及中文列名等转换操作
-     * @param initCallback
-     * @return
+     * @param initCallback callback
+     * @return EasyExportBuilder
      */
     public EasyExportBuilder modelHandler(ModelHandler initCallback){
         Assert.notNull(this.getExportContext(),"exportContext should not be null");
