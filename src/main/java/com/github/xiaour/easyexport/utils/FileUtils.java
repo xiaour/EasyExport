@@ -1,9 +1,8 @@
 package com.github.xiaour.easyexport.utils;
 
-import ch.qos.logback.core.util.FileUtil;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.*;
+import java.io.File;
 import java.nio.file.Files;
 
 @Slf4j
