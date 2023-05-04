@@ -164,7 +164,7 @@ EasyExportProvider
 1. modelHandler()可以对导出模板做部分处理，比如改变背景颜色或文字等动态参数，非必须方法。
 2. export() 是具体执行导出的关键代码。
 3. upload() 考虑到各个系统可能有其他的上传文件的方式，需要将上传的方法在此实现。
-4. finish() 会根据在配置文件中bsf.easyexport.file.delete设定的值决定是否删除生成的原始文件。
+4. finish() 会根据在配置文件中easyexport.file.delete设定的值决定是否删除生成的原始文件。
 AbsBaseEventListener<ExportEvent>
 继承该类可以用于实现监听导出执行的进度，也可以在不同状态下进行一些用户的异步操作。
 @EasyExport
