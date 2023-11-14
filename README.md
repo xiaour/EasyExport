@@ -2,7 +2,11 @@
 # EasyExport使用手册1.0.0
 
 ## 介绍
-EasyExport专为快速导出而开发的组件，整个组件除了接入外使用非常简单，开发人员只需要两行代码即可实现一个离线导出的功能。 而EasyExport是基于EasyExcel和SpringEvent进行开发。只需要使用EasyExcel的开发规则，就可以定义多种Excel的导出了。
+你还在为了查询和导出接口因为写错代码导致数据差异的BUG而烦恼吗？
+
+EasyExport专为快速导出而开发的组件，整个组件除了接入外使用非常简单，开发人员只需要在业务代码中加入两个注解，就轻松的完成一个导出功能。
+
+而EasyExport是基于EasyExcel和SpringEvent进行开发。只需要使用EasyExcel的开发规则，就可以定义多种Excel的导出了。
 在系统中可能需要在多处使用导出，这样我们为了统一导出的入口和处理过程，需要将执行过程简化。没有必要每个为多个导出编写多个类似的导出逻辑，这也是该组件诞生的背景。
 组件设计上，保留了很多可以自定义的接口或方法，可以根据需要对执行的初始化参数或过程进行自定义的设置，提供一些比较灵活的可选项配置。
 组件应用应当优先选择接入调度平台进行异步导出的方式，因为导出的过程可能消耗一定量的内存；当然组件也支持同步导出的方式，这种方式应当尽量控制好内存的使用，以及控制导出并发数。
@@ -19,9 +23,9 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 ### 1. 接入：依赖引用
 ```xml
 <dependency>
-  <groupId>io.github.xiaour</groupId>
-  <artifactId>easy-export</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+    <groupId>io.github.xiaour</groupId>
+    <artifactId>easy-export</artifactId>
+    <version>1.0.0-RELEASE</version>
 </dependency>
 ```
 
