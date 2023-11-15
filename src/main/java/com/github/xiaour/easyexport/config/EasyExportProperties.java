@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * create by 2022/3/11 下午2:54
  */
 @Configuration
-@ConfigurationProperties(prefix = "com.github.xiaour.easyexport")
+@ConfigurationProperties(prefix = "easyexport")
 public class EasyExportProperties {
 
 
@@ -18,37 +18,37 @@ public class EasyExportProperties {
     /**
      * 文件存储位置
      */
-    @Value("${com.github.xiaour.easyexport.file.path:}")
+    @Value("${file.path:}")
     private String filePath;
 
     /**
      * 上传完成后是否删除
      */
-    @Value("${com.github.xiaour.easyexport.file.delete:false}")
+    @Value("${file.delete:false}")
     private Boolean isDelete;
 
     /**
      * 页码字段
      */
-    @Value("${com.github.xiaour.easyexport.field.page.number:pageNum}")
+    @Value("${field.page.number:pageNum}")
     private String pageNumberField;
 
     /**
      * 每页记录数字段
      */
-    @Value("${com.github.xiaour.easyexport.field.page.size:pageSize}")
+    @Value("${field.page.size:pageSize}")
     private String pageSizeField;
 
     /**
      * 每页查询记录数：默认每次查询1万条
      */
-    @Value("${com.github.xiaour.easyexport.fetch.page.size:10000}")
+    @Value("${fetch.page.size:10000}")
     private Integer pageSize;
 
     /**
      * 文件每页写入记录数，超过限制写入下一个Sheet：默认每个sheet页写入150000
      */
-    @Value("${com.github.xiaour.easyexport.file.sheet.size:150000}")
+    @Value("${file.sheet.size:150000}")
     private Integer sheetSize;
 
     public Integer getSheetSize() {

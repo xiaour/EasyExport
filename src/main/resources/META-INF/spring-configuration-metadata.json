@@ -10,37 +10,37 @@
     {
       "name": "easyexport.enabled",
       "type": "java.lang.String",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.file.path",
       "type": "java.lang.String",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.file.delete",
       "type": "java.lang.Boolean",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.field.page.number",
       "type": "java.lang.String",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.field.page.size",
       "type": "java.lang.String",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.fetch.page.size",
       "type": "java.lang.Integer",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     },
     {
       "name": "easyexport.file.sheet.size",
       "type": "java.lang.Integer",
-      "sourceType": "com.github.xiaour.easyexport.config.EasyExportProperties"
+      "sourceType": "easyexport.config.EasyExportProperties"
     }
   ],
   "hints": []
