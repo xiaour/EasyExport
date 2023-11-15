@@ -6,7 +6,7 @@
 
     <groupId>io.github.xiaour</groupId>
     <artifactId>easy-export</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
     <packaging>jar</packaging>
     <url>https://github.com/xiaour/EasyExport</url>
     <description>Less code to implement export</description>

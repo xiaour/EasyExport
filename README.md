@@ -25,7 +25,7 @@ EasyExport专为快速导出而开发的组件，整个组件除了接入外使�
 <dependency>
     <groupId>io.github.xiaour</groupId>
     <artifactId>easy-export</artifactId>
-    <version>1.0.0-RELEASE</version>
+    <version>1.0.1-RELEASE</version>
 </dependency>
 ```
 
